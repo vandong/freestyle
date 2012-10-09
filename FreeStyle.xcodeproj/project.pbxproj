@@ -315,6 +315,7 @@
 				GCC_PREFIX_HEADER = "FreeStyle/FreeStyle-Prefix.pch";
 				INFOPLIST_FILE = "FreeStyle/FreeStyle-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -326,6 +327,7 @@
 				GCC_PREFIX_HEADER = "FreeStyle/FreeStyle-Prefix.pch";
 				INFOPLIST_FILE = "FreeStyle/FreeStyle-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -349,6 +351,7 @@
 				851FD03716227DD100EAB5F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
