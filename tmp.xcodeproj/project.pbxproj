@@ -416,6 +416,7 @@
 				INFOPLIST_FILE = "UnitTest/UnitTest-Info.plist";
 				OTHER_LDFLAGS = "-RegisterForSystemEvents";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -435,6 +436,7 @@
 				INFOPLIST_FILE = "UnitTest/UnitTest-Info.plist";
 				OTHER_LDFLAGS = "-RegisterForSystemEvents";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
