@@ -25,12 +25,7 @@ if [ ! -d "test-reports" ]; then
 fi
 
 # Kick off the instruments build
-instruments \
-$RUN_ON_SPECIFIC_DEVICE_OPTION \
--t $TRACETEMPLATE \
-$APP_LOCATION \
--e UIASCRIPT $BASE_TEST_SCRIPT \
--e UIARESULTSPATH /var/tmp | grep "<"  > test-reports/test-results.xml
+instruments -t '/Applications/Xcode.app/Contents/Applications/Instruments.app/Contents/PlugIns/AutomationInstrument.bundle/Contents/Resources/Automation.tracetemplate' '/Users/Shared/Jenkins/Home/jobs/FreeStyle/workspace/build/Debug-iphoneos/tmp.app' -e UIASCRIPT '/Users/Shared/Jenkins/Home/jobs/FreeStyle/workspace/shaune/ci.js' -e UIARESULTSPATH '/Users/Shared/Jenkins/Home/jobs/FreeStyle/workspace/shaune/'
 
 # cleanup the tracefiles produced from instruments
 rm -rf *.trace
