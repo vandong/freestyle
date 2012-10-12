@@ -414,6 +414,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnitTest/UnitTest-Prefix.pch";
 				INFOPLIST_FILE = "UnitTest/UnitTest-Info.plist";
+				OTHER_LDFLAGS = "-RegisterForSystemEvents";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -432,6 +433,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnitTest/UnitTest-Prefix.pch";
 				INFOPLIST_FILE = "UnitTest/UnitTest-Info.plist";
+				OTHER_LDFLAGS = "-RegisterForSystemEvents";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -531,6 +533,7 @@
 				856E8811162545520022F909 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85C6ECF3162420730096909F /* Build configuration list for PBXProject "tmp" */ = {
 			isa = XCConfigurationList;
