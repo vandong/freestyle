@@ -18,6 +18,8 @@
 		854602B1162BC077005AC677 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 854602B0162BC077005AC677 /* main.m */; };
 		854602B4162BC35F005AC677 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 854602B3162BC35F005AC677 /* libOCMock.a */; };
 		854602BD162BC45B005AC677 /* SampleTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 854602BC162BC45B005AC677 /* SampleTestCase.m */; };
+		854602C1162BCF0F005AC677 /* RunIPhoneSecurityd.sh in Resources */ = {isa = PBXBuildFile; fileRef = 854602BF162BCF0F005AC677 /* RunIPhoneSecurityd.sh */; };
+		854602C2162BCF0F005AC677 /* RunTests.sh in Resources */ = {isa = PBXBuildFile; fileRef = 854602C0162BCF0F005AC677 /* RunTests.sh */; };
 		854FAADD1627D2DF009B902B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856E87F9162544E60022F909 /* SenTestingKit.framework */; };
 		854FAADE1627D2DF009B902B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C6ECFD162420730096909F /* UIKit.framework */; };
 		854FAADF1627D2DF009B902B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C6ECFF162420730096909F /* Foundation.framework */; };
@@ -93,6 +95,8 @@
 		854602BA162BC3A3005AC677 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
 		854602BB162BC3A3005AC677 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
 		854602BC162BC45B005AC677 /* SampleTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTestCase.m; sourceTree = "<group>"; };
+		854602BF162BCF0F005AC677 /* RunIPhoneSecurityd.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunIPhoneSecurityd.sh; sourceTree = "<group>"; };
+		854602C0162BCF0F005AC677 /* RunTests.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunTests.sh; sourceTree = "<group>"; };
 		854FAADC1627D2DF009B902B /* CocoaTestUnitBundle.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaTestUnitBundle.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		854FAAE21627D2DF009B902B /* CocoaTestUnitBundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaTestUnitBundle-Info.plist"; sourceTree = "<group>"; };
 		854FAAE41627D2E0009B902B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -225,6 +229,8 @@
 		85460289162BAEF4005AC677 /* GHUniteTest */ = {
 			isa = PBXGroup;
 			children = (
+				854602BF162BCF0F005AC677 /* RunIPhoneSecurityd.sh */,
+				854602C0162BCF0F005AC677 /* RunTests.sh */,
 				854602BC162BC45B005AC677 /* SampleTestCase.m */,
 				8546028A162BAEF4005AC677 /* Supporting Files */,
 			);
@@ -408,6 +414,7 @@
 				85460280162BAEF4005AC677 /* Sources */,
 				85460281162BAEF4005AC677 /* Frameworks */,
 				85460282162BAEF4005AC677 /* Resources */,
+				854602C3162BCF39005AC677 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -529,6 +536,8 @@
 				85460296162BAEF4005AC677 /* Default.png in Resources */,
 				85460298162BAEF4005AC677 /* Default@2x.png in Resources */,
 				8546029A162BAEF4005AC677 /* Default-568h@2x.png in Resources */,
+				854602C1162BCF0F005AC677 /* RunIPhoneSecurityd.sh in Resources */,
+				854602C2162BCF0F005AC677 /* RunTests.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +584,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		854602C3162BCF39005AC677 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh RunTests.sh\n";
+		};
 		854FAADA1627D2DF009B902B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
