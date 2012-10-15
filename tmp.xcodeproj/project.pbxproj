@@ -595,7 +595,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh RunTests.sh\n";
+			shellScript = "sh '/dong/IOS Unit Test/gabriel-gh-unit-f04913c/Scripts/RunTests.sh'\n";
 		};
 		854FAADA1627D2DF009B902B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
