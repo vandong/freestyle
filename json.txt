@@ -1,0 +1,36 @@
+{"ListTab":
+	{				
+	"Count": "5",			
+	"scroll_type":"1",
+	"background":"AAFFEE",
+	"default_item_style":{
+					"active_text_color": "112233",
+					"active_background": "112233",
+					"deactive_text_color": "AAFF11",
+					"deactive_background": "1133AA"
+					}
+	"specification_links":[{"linktext":""},
+							{"linktext":""}
+							],			
+	"Tabs":[			
+			{		
+				"link":"http://www.google.com",	
+				"text": "google",
+				"item_style":{
+					"active_text_color": "112233",
+					"active_background": "112233",
+					"deactive_text_color": "AAFF11",
+					"deactive_background": "1133AA"
+					}
+			},
+			{		
+				"link":"http://www.nhaccuatui.com",	
+				"text": "vnx",
+			},
+			{		
+				"link":"http://www.youtube.com",	
+				"text": "ttc",
+			}
+			]
+	}
+}
